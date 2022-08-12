@@ -9,6 +9,9 @@ class Venue(models.Model):
     date = models.DateField()
     time = models.TimeField()
 
+    def __str__(self):
+        return self.name
+
 
 # Creating our Artist models
 class Artist(models.Model):
@@ -18,6 +21,9 @@ class Artist(models.Model):
     gender = models.CharField(max_length=255)
     contact = models.CharField(max_length=255)
 
+    def __str__(self):
+        return self.title
+
 
 # Creating our Shows models
 class Shows(models.Model):
@@ -25,3 +31,6 @@ class Shows(models.Model):
         Artist, related_name="artist", on_delete=models.CASCADE)
     name = models.CharField(max_length=255)
     description = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.name
