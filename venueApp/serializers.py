@@ -2,16 +2,16 @@ from rest_framework import serializers
 from .models import Venue, Artist, Shows
 
 
-class VenueSerializer(serializers.Serializer):
+class VenueSerializer(serializers.ModelSerializer):
     class Meta:
         model = Venue
 
 
-class ArtistSerializer(serializers.Serializer):
+class ArtistSerializer(serializers.ModelSerializer):
     class Meta:
         model = Artist
 
 
-class ShowsSerializer(serializers.Serializer):
+class ShowsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Shows
