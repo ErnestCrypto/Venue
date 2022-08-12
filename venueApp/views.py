@@ -32,3 +32,7 @@ class ArtistDetails(generics.RetrieveUpdateDestroyAPIView):
 class ShowsDetails(generics.RetrieveUpdateDestroyAPIView):
     queryset = Shows.objects.all()
     serializer_class = ShowsSerializer
+
+
+def mine():
+    return {}
