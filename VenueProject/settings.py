@@ -80,8 +80,12 @@ WSGI_APPLICATION = 'VenueProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd3vnjhqtnoq9l0',
+        'USER': 'qlpavtpyfocwqv',
+        'PASSWORD': '0584f90b70dd74383c2abcee7ec2bd6f2f03df22cc607fb572b7cfd72f3c87ee',
+        'HOST': 'ec2-34-203-182-65.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
